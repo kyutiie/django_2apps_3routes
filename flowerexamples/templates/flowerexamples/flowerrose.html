@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Examples - Rose</title>
+    <style>
+        body {
+            font-family: Elephant;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #610c4e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h2{
+            font-family: elephant;
+            font-size: 30px;
+            margin: 20px 0;
+            text-align: center;
+            margin-top: 130px;
+
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #af4c91;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #610c4e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 530px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rose Flowers</h1> 
+        <nav>
+            <a href="{% url 'flowerexamples-flowerallpink' %}">All Pink</a>
+            <a href="{% url 'flowerexamples-flowertulips' %}">Tulip</a>
+            <a href="{% url 'flowerexamples-flowerrose' %}">Rose</a>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <h2>A rose by any other name would smell as sweet.</h2>
+       
+        <nav>
+            <a href="{% url 'flowerblog-home' %}">Visit Flower Blog</a>
+        </nav>
+    </div>
+    <footer>
+        <p>&copy; 2024 Flower Blog. All Rights Pinky Flowers.</p>
+    </footer>
+</body>
+</html>
